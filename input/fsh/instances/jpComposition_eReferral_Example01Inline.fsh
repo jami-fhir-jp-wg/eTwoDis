@@ -46,12 +46,11 @@ Description: "構成情報サンプル　composition"
 * author[0].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * author[=].type = "Practitioner"
 * author[=].display = "紹介状作成者PractitionerRoleリソース"
+
 // * author[+].reference = "referralFromOrganizationExample01Inline"
-/*
 * author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * author[=].type = "Organization"
 * author[=].display = "紹介状作成機関Organizationリソース"
-*/
 
 * title = "診療情報提供書"
 // * custodian.reference = "referralFromOrganizationExample01Inline"
