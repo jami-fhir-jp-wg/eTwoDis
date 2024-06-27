@@ -17,7 +17,7 @@ Description: "構成情報サンプル　composition"
 
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
+//* meta.profile[+] = "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
 
 * extension.url = "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
 * extension.valueString = "1.0"
@@ -47,9 +47,12 @@ Description: "構成情報サンプル　composition"
 * author[=].type = "Practitioner"
 * author[=].display = "紹介状作成者PractitionerRoleリソース"
 // * author[+].reference = "referralFromOrganizationExample01Inline"
-* author[+].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+/*
+* author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * author[=].type = "Organization"
 * author[=].display = "紹介状作成機関Organizationリソース"
+*/
+
 * title = "診療情報提供書"
 // * custodian.reference = "referralFromOrganizationExample01Inline"
 * custodian.reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
