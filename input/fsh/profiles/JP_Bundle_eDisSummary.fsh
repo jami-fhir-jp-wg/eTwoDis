@@ -3,6 +3,7 @@ Parent: Bundle
 Id: JP-Bundle-eDischargeSummary
 Description: "退院時サマリー Bundle"
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary"
+* ^version = "1"
 * ^status = #active
 * . ^short = "退院時サマリーのための文書 Bundleリソース"
 * . ^definition = "退院時サマリーのための文書 Bundleリソース"

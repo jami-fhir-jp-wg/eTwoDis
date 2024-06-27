@@ -4,6 +4,7 @@ Parent: Bundle
 Id: JP-Bundle-eReferral
 Description: "診療情報提供書 Bundle"
 * ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
+* ^version = "1"
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"

@@ -29,41 +29,42 @@ Instance: jppatientExample01
 InstanceOf: JP_Patient_eCS
 Usage: #example
   
-Description: "Patientリソース　（診療情報提供書　患者情報）"
-
+Description: "Patientリソース　（患者情報）"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
+* meta.profile[+] = $JP_Patient_eCS
 
-* identifier.system = "urn:oid:1.2.392.200119.6.102.11234567890"
-* identifier.value = "12345"
-
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[=].value = "000999739"
+* identifier[+].system = $JP_Insurance_memberID
+* identifier[=].value = "00012345:あいう:１８７:05"
+//* identifier[=].value = "50012:あいう:123:05"
+//* identifier[=].value = "00012345::１８７:05"
+//* identifier[=].value = "00012345:あいう::05"
+//* identifier[=].value = "00012345:あいう:１８７:1"
 * active = true
 
-* name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
+* name[0].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #IDE
-* name[=].use = #official
-* name[=].text = "田中 太郎"
-* name[=].family = "田中"
-* name[=].given = "太郎"
-
+* name[=].text = "牧野 爛漫"
+* name[=].family = "牧野"
+* name[=].given = "爛漫"
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #SYL
-* name[=].use = #official
-* name[=].text = "タナカ タロウ"
-* name[=].family = "タナカ"
-* name[=].given = "タロウ"
-
-// 自宅電話番号と同じ処理
-* telecom[+].system = #phone
-* telecom[=].value = "03-1234-5678"
-* telecom[=].use = #home
-
-* gender = #male
-
-* birthDate = "1955-05-04"
-
-* address[+].text = "神奈川県横浜市港区１－２－３"
-* address[=].postalCode = "123-4567"
-* address[=].country = "JP"
-
+* name[=].text = "マキノ ランマン"
+* name[=].family = "マキノ"
+* name[=].given = "ランマン"
+* telecom.system = #phone
+* telecom.value = "03-123-1234"
+* telecom.use = #home
+* telecom.rank = 1
+* gender = #female
+* birthDate = "1930-06-28"
+* address.text = "高知県高知市五台山4200-6"
+* address.postalCode = "781-8125"
+* address.city = "高知市"
+* address.state = "高知県"
+* contact.telecom.system = #phone
+* contact.telecom.value = "03-0123-4545   99991"
+* contact.telecom.use = #work
+* contact.telecom.rank = 2

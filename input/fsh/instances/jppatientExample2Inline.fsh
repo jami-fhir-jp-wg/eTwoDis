@@ -33,11 +33,16 @@ Description: "JPPatient患者情報（田中"
 
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
+* meta.profile[+] = $JP_Patient_eCS
 
-* identifier.system = "urn:oid:1.2.392.200119.6.102.11234567890"
-* identifier.value = "12345778"
-
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[=].value = "000999739"
+* identifier[+].system = $JP_Insurance_memberID
+* identifier[=].value = "00012345:あいう:１８７:05"
+//* identifier[=].value = "50012:あいう:123:05"
+//* identifier[=].value = "00012345::１８７:05"
+//* identifier[=].value = "00012345:あいう::05"
+//* identifier[=].value = "00012345:あいう:１８７:1"
 * active = true
 
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
