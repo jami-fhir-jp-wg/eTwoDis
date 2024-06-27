@@ -103,7 +103,6 @@ table th {
 
 <table>
       <col style="width:20%"/>
-      <tbody>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-JP-Bundle-eReferral.html" title="StructureDefinition/JP-Bundle-eReferral">JP_Bundle_eReferral</a>
