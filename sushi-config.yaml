@@ -1,0 +1,99 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their functions,     │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: ig-sample
+canonical: http://jpfhir.jp/fhir/jp-sample
+name: "サンプル医療文書のFHIR実装ガイド ドラフト版"
+title: "サンプル医療文書のFHIR実装ガイド"
+description: "サンプル医療文書のFHIR実装ガイド ドラフト版"
+status: draft # draft | active | retired | unknown 
+version: 1.0.0-tmp
+date: 2024-05-01
+fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
+copyrightYear: 2023+
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+# license: CC BY-ND  #  https://www.hl7.org/fhir/valueset-spdx-license.html
+# https://www.hl7.org/fhir/valueset-jurisdiction.html 
+publisher:
+  name: Author Name
+  email: sample@sample.com
+copyright: Copyright by Author Name
+jurisdiction: 'urn:iso:std:iso:3166-2#JP'
+dependencies:
+  jp-core.r4:
+    uri: http://jpfhir.jp/fhir/core/1.1.2/ImplementationGuide/
+    version: 1.1.2
+  jpfhir-terminology.r4:
+    uri: http://jpfhir.jp/fhir//jpfhir-terminology.r4/ImplementationGuide/
+    version: 1.1.1
+
+#----------------------------------------
+# ページタイトル名称設定
+#----------------------------------------
+pages:
+  index.md:
+    title: サンプル医療文書のFHIR仕様  JP-sample
+  samplePage.md:
+    title: 詳細説明
+  validationGuide.md:
+    title: Validationガイド
+    
+#-------------------------------------
+# メニュー設定
+#-------------------------------------
+menu:
+  Home:
+    本文: index.html
+    詳細説明: samplePage.html
+    プロファイル: artifacts.html
+  Artifacts: 
+    Artifacts: artifacts.html
+  Validationガイド:
+    Validationガイド: validationGuide.html    
+  パッケージDownload:
+    標準(diff)版: https://jpfhir.jp/fhir/sample/jp-sample.r4-1.0.0.tgz
+    snapshot版: https://jpfhir.jp/fhir/sample/jp-sample.r4-1.0.0-snap.tgz    
+#-----------------------------------------
+# IG 外部パラメータ設定
+#-----------------------------------------
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+    #- input/summaries
+  path-expansion-params: '../../input/_resources/exp-params.json'
+  no-narrative: 
+    - CodeSystem/*
+  active-tables: 'false'
+  apply-version: 'true'
+  apply-copyright: 'true'
+  apply-publisher: 'true'
+  apply-contact: 'true'
+  apply-license: 'true'
+  apply-jurisdiction: 'true'
+  show-inherited-invariants: 'true'
+  usage-stats-opt-out: 'true'
+  display-warnings: 'true'
+  excludexml: 'true'
+  excludejson: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+#  excludeexample: 'false'
+  generate: #what does this do - todo: remove and see
+    - json
+  no-validate:
+    - '*/hl7.fhir.jp.core'
+  special-url:
+    - http://jpfhir.jp/fhir/IGsample/StructureDefinition/JP_Bundle_sample001
+    - http://jpfhir.jp/fhir/IGsample/StructureDefinition/JP_Composition_sample
+    - http://jpfhir.jp/fhir/IGsample/CodeSystem/document-section
+    - http://jpfhir.jp/fhir/IGsample/CodeSystem/doc-typecodes
+    - http://jpfhir.jp/fhir/IGsample/ValueSet/doc-typecodes
+    - http://jpfhir.jp/fhir/IGsample/ValueSet/document-section
