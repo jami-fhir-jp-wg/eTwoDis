@@ -36,8 +36,8 @@ dependencies:
 pages:
   index.md:
     title: サンプル医療文書のFHIR仕様  JP-eTwoDocs
-  samplePage.md:
-    title: 詳細説明
+  history.md:
+    title: 変更履歴
   validationGuide.md:
     title: Validationガイド
     
