@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ig-sample
+id: ig-eTwoDocs
 canonical: http://jpfhir.jp/fhir/jp-sample
 name: "サンプル医療文書のFHIR実装ガイド ドラフト版"
 title: "サンプル医療文書のFHIR実装ガイド"
