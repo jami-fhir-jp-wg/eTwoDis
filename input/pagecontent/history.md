@@ -76,7 +76,7 @@ table th {
 
 </style>
 
-# 改訂履歴　（新しい順）
+# 改訂履歴　（新しい順） 診療情報提供書
 ## 2024.06.23	Ver. 1.2.0-rc1 (リリース候補v1)
   - 電子カルテ情報共有サービス用と汎用診療情報提供書を同一profileで記述するようにprofileを統一。
   - 添付情報セクション、PDFセクションでbinaryリソースへの参照を禁止し、参照はDocumentReferenceリソースへの参照だけできるように改訂。
@@ -229,3 +229,13 @@ table th {
         - Procedure.bodySite STEM７のsystem値を変    （JP-Core v1.1に対応）
         - Procedure.outcome カテゴリーのsystem値　http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureOutcome_CS　に変更し、説明を変更（JP-Core v1.1対応）
 
+
+# 改訂履歴　（新しい順）
+
+## 2024.02.29	Ver. 1.1.6
+  - BundleのプロファイルをValidation時のエラーに対応するよう記述修正（仕様の変更はなし）。
+  - 電子カルテ情報共有サービスの6情報仕様と共通するリソースについて、プロファイル記述を共通化（仕様の変更はなし）。
+
+## 2024.02.12	Ver. 1.1.5
+  - 仕様をPDF版（およびそれのHTML版）を参照する記載方式に変更。
+  - 電子カルテ情報共有サービスの6情報仕様と共通するリソースについて仕様を6情報仕様を参照する方式に変更。
