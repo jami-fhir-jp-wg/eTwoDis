@@ -231,7 +231,7 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].mode ..0
 * section[attachmentSection].orderedBy ..0
 * section[attachmentSection].entry 1..*
-* section[attachmentSection].entry only Reference(DocumentReference or Binary or Bundle)  // あえてJP_を外している
+* section[attachmentSection].entry only Reference(DocumentReference or Bundle) 
 * section[attachmentSection].entry ^short = "添付情報ファイルへの参照"
 * section[attachmentSection].entry ^definition = "添付情報ファイルへの参照"
 * section[attachmentSection].emptyReason ..1
@@ -274,7 +274,7 @@ and authorDepartment 0..1 MS
 * section[pdfSection].mode ..0
 * section[pdfSection].orderedBy ..0
 * section[pdfSection].entry 1..*
-* section[pdfSection].entry only Reference(DocumentReference or Binary)
+* section[pdfSection].entry only Reference(DocumentReference)
 * section[pdfSection].entry ^short = "PDFファイルへの参照"
 * section[pdfSection].entry ^definition = "PDFファイルへの参照"
 * section[pdfSection].emptyReason ..1
