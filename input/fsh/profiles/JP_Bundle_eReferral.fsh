@@ -2,7 +2,7 @@
 Profile: JP_Bundle_eReferral
 Parent: Bundle
 Id: JP-Bundle-eReferral
-Description: "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
+Description: "診療情報提供書 Bundle"
 * ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
@@ -225,4 +225,3 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[bundleData].resource only  JP_Bundle
 * entry[bundleData] ^short = "各種のBudle文書"
 * entry[bundleData] ^definition = "各種のBudle文書を参照する。"
-

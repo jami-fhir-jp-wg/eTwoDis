@@ -1,7 +1,7 @@
 Profile: JP_Bundle_eDischargeSummary
 Parent: Bundle
 Id: JP-Bundle-eDischargeSummary
-Description: "退院時サマリーのための文書 Bundleリソース"
+Description: "退院時サマリー Bundle"
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary"
 * ^status = #active
 * . ^short = "退院時サマリーのための文書 Bundleリソース"
@@ -57,7 +57,7 @@ and researchStudy 0..* MS   // 臨床研究参加情報
 and relatedPerson 0..* MS   // 関係者情報                       
 
 and binaryData 0..* MS  // その他の添付バイナリーデータ
-
+and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時サマリー）    
 * entry[composition] ^short = "documentタイプのBundleリソースの先頭entryはCompositionリソース。"
 * entry[composition] ^definition = "compositionリソースのエントリー。"
 * entry[composition].fullUrl 1.. MS
@@ -209,11 +209,11 @@ and binaryData 0..* MS  // その他の添付バイナリーデータ
 * entry[relatedPerson].resource only  JP_RelatedPerson
 * entry[relatedPerson] ^short = "親族情報を記述したRelatedPersonリソースを参照"
 * entry[relatedPerson] ^definition = "親族情報を記述して参照する。"
-
+/*
 * entry[binaryData].resource only  JP_Binary
 * entry[binaryData] ^short = "各種備考参照情報を記述したBinaryリソースを参照"
 * entry[binaryData] ^definition = "各種備考参照情報をBinaryリソースで記述して参照する。"
-
+*/
 * entry[medicationBundle].resource only  JP_Bundle
 * entry[medicationBundle] ^short = "処方箋のBudle文書"
 * entry[medicationBundle] ^definition = "処方箋のBudle文書を参照する。"
@@ -224,3 +224,6 @@ and binaryData 0..* MS  // その他の添付バイナリーデータ
 
 * entry[location].resource only  JP_Location
 
+* entry[bundleData].resource only  JP_Bundle
+* entry[bundleData] ^short = "各種のBudle文書"
+* entry[bundleData] ^definition = "各種のBudle文書を参照する。"
