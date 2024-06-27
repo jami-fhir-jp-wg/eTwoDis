@@ -7,7 +7,7 @@
 Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
-Title:  "eCS/CLINS:JP_AllergyIntolerance_eCS"
+Title:  "JP_AllergyIntolerance_eCS"
 Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

@@ -7,7 +7,7 @@
 Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
-Title:  "eCS/CLINS:JP_Condition_eCS"
+Title:  "JP_Condition_eCS"
 Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

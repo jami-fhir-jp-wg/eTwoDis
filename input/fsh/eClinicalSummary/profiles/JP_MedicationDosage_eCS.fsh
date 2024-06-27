@@ -7,7 +7,7 @@
 Profile: JP_MedicationDosage_eCS
 Parent: JP_MedicationDosage
 Id: jp-medicationdosage-eCS
-Title: "eCS/CLINS:JP_MedicationRequest_eCS Dosageデータタイプ"
+Title: "JP_MedicationRequest_eCS Dosageデータタイプ"
 Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_eCS のdosageInstruction要素で使用するDosageデータタイプ"
 
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS"

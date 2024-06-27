@@ -8,7 +8,7 @@
 Profile: JP_Patient_eCS
 Parent: JP_Patient
 Id: JP-Patient-eCS
-Title: "eCS/CLINS:JP_Patient_eCS"
+Title: "JP_Patient_eCS"
 Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 * obeys valid-system-local-patientID
