@@ -1,11 +1,3 @@
-Profile:        JP_Bundle
-Parent:			Bundle
-Id:             JP-Bundle
-Description:    "Derived Profile from JP-Core"
-* ^url = "http://jpfhir.jp/fhir/Common/StructureDefinition/JP_Bundle"
-* ^date = "2024-02-07"
-* meta.lastUpdated 0.. MS
-
 Profile: JP_Bundle_eDischargeSummary
 Parent: Bundle
 Id: JP-Bundle-eDischargeSummary
