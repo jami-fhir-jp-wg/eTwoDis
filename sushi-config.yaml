@@ -5,7 +5,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: ig-eTwoDocs
-canonical: http://jpfhir.jp/fhir/jp-sample
+canonical: http://jpfhir.jp/fhir/jp-eTwoDocs
 name: "サンプル医療文書のFHIR実装ガイド ドラフト版"
 title: "サンプル医療文書のFHIR実装ガイド"
 description: "サンプル医療文書のFHIR実装ガイド ドラフト版"
@@ -35,7 +35,7 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: サンプル医療文書のFHIR仕様  JP-sample
+    title: サンプル医療文書のFHIR仕様  JP-eTwoDocs
   samplePage.md:
     title: 詳細説明
   validationGuide.md:
@@ -47,7 +47,7 @@ pages:
 menu:
   Home:
     本文: index.html
-    詳細説明: samplePage.html
+    変更履歴: history.html
     プロファイル: artifacts.html
   Artifacts: 
     Artifacts: artifacts.html
