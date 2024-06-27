@@ -79,29 +79,29 @@ table th {
 
 <a id="top"></a>
 
-# **診療情報提供書HL7FHIR記述仕様第1版 実装ガイド **
+# ２文書（診療情報提供書・退院時サマリー） FHIR実装ガイド
 
 ## 実装ガイドと仕様書
-実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な、技術的情報をまとめたもので、FHIRリソースの構造的な情報やFHIRのベース仕様からの異なっている点などを人が理解し、計算機が機械的に記述されたデータが仕様に準拠し、文法ルールに従っているかを検証（バリデーション）する目的などで利用される。
+実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な技術的情報をまとめたもので、FHIRリソースの構造的な情報や、仕様の元となっているFHIR R4.0.1(https://hl7.org/fhir/R4/)、JP-Core（https://jpfhir.jp/fhir/core/）からの異なっている点などを、人が理解するとともに、計算機が記述されたデータの仕様適合性を検証（バリデーション）する目的などで利用される。
 
-仕様は、以下のPDF版もあわせて参照すること。
+2文書の仕様詳細は、以下のPDF版もあわせて参照すること。
   - 診療情報提供書
     - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.2.0-rc1 ] 
-  (https://std.jpfhir.jp/stddoc/eReferralFHIR_v120-rc1.pdf)
+  (https://std.jpfhir.jp/stddoc/eReferralFHIR_v120rc1.pdf)
     - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.1.5r ] 
   (https://std.jpfhir.jp/stddoc/eReferralFHIR_v1x.pdf)
 
   - 退院時サマリー
-    - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.2.0-rc1] (準備中)
+    - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.2.0-rc1] 
     - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.1.5]
-  (https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v1x.pdf)
+  (https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v120rc1.pdf)
 
 
 ## 主要なリソースのプロファイルに関する表
 
 ### 診療情報提供書、退院時サマリー固有のリソースのプロファイル
 
-<table class="grid">
+<table>
       <col style="width:20%"/>
       <tbody>
          <tr>
@@ -136,10 +136,12 @@ table th {
 <p>退院時サマリー Composition</p>
 </td>
          </tr>
-  </table>
+</table>
 <br>
 
+
 ### 　6情報に該当するリソースと患者リソースのプロファイル
+
 
 <table>
          <tr>
@@ -184,8 +186,13 @@ table th {
          </tr>
    </table>
 <br>
+
+
 ### 　6情報の各リソースに埋め込まれるリソースのプロファイル
+
+
 * ２文書にも含めることができる。
+
 <table>
 <tr>
             <td style="column-width:30%">
@@ -221,7 +228,10 @@ table th {
          </tr>
 </table>
 <br>
+
+
 ### ２文書に含めることのできるその他のリソースのプロファイル
+
 
   <table>
          <tr>
@@ -291,11 +301,20 @@ table th {
 </table>
          
 <br><br>
-## 仕様策定
-令和２年度厚生労働科学特別研究事業「診療情報提供書, 電子処方箋等の電子化医療文書の相互運用性確保のための標準規格の開発研究」研究班 (研究代表：大江和彦（東京大学）)<br>
-日本医療情報学会NeXEHRS課題研究会、HL7FHIR 日本実装検討WGでの検討結果を反映している。<br>
-https://std.jpfhir.jp/<br>
-Authorized by （一社）日本HL7協会 for Ver.1.0<br>
-Published and maintaied by （一社）日本医療情報学会 for Ver.1.0<br>
+
+
+
+### 謝辞
+
+ <span style="color: black; font-size: 80%;">本実装ガイドは、以下の研究班の方々の貢献と支援により策定されています。</span>
+
+  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」<a href="https://mhlw-grants.niph.go.jp/project/145722">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」<a href="https://mhlw-grants.niph.go.jp/project/164909">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7<a href="https://biomse.t.u-tokyo.ac.jp/moonshot/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1<a href="https://d1www.sip3.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXERS課題研究会「FHIR日本実装検討WG」<a href="https://jpfhir.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会<a href="https://www.jami.jp/jamistd/standards-development/">☞</a></span>
+  
+ <br>
 
 *以下余白*
