@@ -1,11 +1,21 @@
 
 
 // 診療情報提供書セクション区分コード
+ValueSet: JP_codeSystem_eReferral_document_section
+Id: jp-codeSystem-eReferral-document-section
+Description: "診療情報提供書セクション区分　ValueSet"
+* ^url = "http://jpfhir.jp/fhir/eReferral/ValueSet/document-section"
+* ^title = "診療情報提供書セクション区分コード　ValueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
+
+// 退院時サマリーセクション区分コード
 ValueSet: JP_codeSystem_eDischargeSummary_document_section
 Id: jp-codeSystem-eDischargeSummary-document-section
-Description: "診療情報提供書セクション区分　ValueSet"
+Description: "退院時サマリーセクション区分　ValueSet"
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section"
-* ^title = "診療情報提供書セクション区分コード　ValueSet"
+* ^title = "退院時サマリーセクション区分コード　ValueSet"
 * ^status = #active
 * ^experimental = false
 * include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
