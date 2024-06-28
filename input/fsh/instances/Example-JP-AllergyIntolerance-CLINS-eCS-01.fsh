@@ -155,7 +155,7 @@ Description: "allergyIntoleranceExample03 必須要素で記述した薬剤ア�
 * criticality = #high
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#YCM2260701F1271"イソジンガーグル液７％"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#YCM2260701F1271 "イソジンガーグル液７％"
 * code.text = "ヨードうがい液"
 
 
