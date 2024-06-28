@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+/fsh-generated
+/ExampleJson
+/backup
+/temp
+/template
+/input-cache
+/output
+/packagesForVali
