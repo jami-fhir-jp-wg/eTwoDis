@@ -55,6 +55,7 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 * intent = #order
 
 * medicationCodeableConcept.coding[+] = urn:oid:1.2.392.200119.4.403.1#105271807 "プレドニン錠５ｍｇ・塩野義"
+* medicationCodeableConcept.coding[+] = urn:oid:1.2.392.100495.20.1.73#2456001F1310 "プレドニン錠５ｍｇ"
 
 * medicationCodeableConcept.text = "プレドニン錠５ｍｇ・塩野義"
 

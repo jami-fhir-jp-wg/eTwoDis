@@ -199,7 +199,7 @@ and syobo 0..
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter_eCS)
+* encounter only  Reference(JP_Encounter)
   * insert relative_short_definition("病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 

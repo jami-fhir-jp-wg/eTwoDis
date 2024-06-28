@@ -141,7 +141,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter_eCS)
+* encounter only  Reference(JP_Encounter)
   * insert relative_short_definition("このアレルギ情報を記録したときの受診情報（入外区分など）を記述しているJP_Encounter_eCSに従うEncounterリソース（contained リソース）への参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
