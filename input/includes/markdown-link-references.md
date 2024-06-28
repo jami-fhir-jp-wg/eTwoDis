@@ -205,15 +205,74 @@
 [JP_CLINS_ValueSet_InfectionLabo_TPQUANTRESULT_VS]: ValueSet-jp-clins-valueset-infectionlabo-tpquantresult-vs.html
 [JP_CLINS_ValueSet_InfectionLabo_TPRESULT_VS]: ValueSet-jp-clins-valueset-infectionlabo-tpresult-vs.html
 [JP_codeSystem_eDischargeSummary_document_section]: ValueSet-jp-codeSystem-eDischargeSummary-document-section.html
+[JP_codeSystem_eReferral_document_section]: ValueSet-jp-codeSystem-eReferral-document-section.html
 [JP_dischargeDisposition_VS]: ValueSet-jp-dischargeDisposition-vs.html
 [JP_eCS_MedicationCode_Nocoded_VS]: ValueSet-jp-ecs-medicationcode-nocoded-vs.html
 [JP_eCS_ObservationLabResultCode_VS]: ValueSet-jp-ecs-observationlabresultcode-vs.html
 [JP_valueSet_documentTypeCode]: ValueSet-jp-valueSet-documentTypeCode.html
 
 <!-- Example -->
+[Example-JP-AllergyIntolerance-eCS-01]: AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-01.html
+[Example-JP-AllergyIntolerance-eCS-02]: AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-02.html
+[Example-JP-DrugContraindications-eCS-03]: AllergyIntolerance-Example-JP-DrugContraindications-eCS-03.html
+[Example-JP-Condition-eCS-01]: Condition-Example-JP-Condition-eCS-01.html
+[Example-JP-Condition-eCS-02]: Condition-Example-JP-Condition-eCS-02.html
+[Example-JP-Condition-eCS-03]: Condition-Example-JP-Condition-eCS-03.html
+[Example-JP-Encounter-AMB]: Encounter-Example-JP-Encounter-AMB.html
+[Example-JP-Encounter-IMP]: Encounter-Example-JP-Encounter-IMP.html
+[Example-JP-Encounter-eCS-01]: Encounter-Example-JP-Encounter-eCS-01.html
+[Example-JP-MedReq-ExtAnus-AsNeeded-Total1]: MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.html
+[Example-JP-MedReq-ExtSkin-Total2]: MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.html
+[Example-JP-MedReq-PO-4timez-7days]: MedicationRequest-Example-JP-MedReq-PO-4timez-7days.html
+[Example-JP-MedReq-PO-AsNeeded-LimitMax]: MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.html
+[Example-JP-MedReq-PO-BID-10days-AsNeeded]: MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.html
+[Example-JP-MedReq-PO-BID-2d]: MedicationRequest-Example-JP-MedReq-PO-BID-2d.html
+[Example-JP-MedReq-PO-Fumin-AsNeeded-4]: MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.html
+[Example-JP-MedReq-PO-SID-28days]: MedicationRequest-Example-JP-MedReq-PO-SID-28days.html
+[Example-JP-MedReq-PO-SID-90-AMB]: MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.html
+[Example-JP-MedReq-PO-TID-2days]: MedicationRequest-Example-JP-MedReq-PO-TID-2days.html
 [JP-MedReq-ePreData-Example-fukintouByDay]: MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html
+[Example-ObsLabo-Alb]: Observation-Example-ObsLabo-Alb.html
+[Example-ObsLabo-K]: Observation-Example-ObsLabo-K.html
+[Example-ObsLabo-eGFR]: Observation-Example-ObsLabo-eGFR.html
+[Example-Patient-minimun]: Patient-Example-Patient-minimun.html
+[Example-Practitioner-minimun-D001]: Practitioner-Example-Practitioner-minimun-D001.html
+[Example-Practitioner-minimun-D002]: Practitioner-Example-Practitioner-minimun-D002.html
+[Example-Practitioner-minimun-D003]: Practitioner-Example-Practitioner-minimun-D003.html
+[Example-Practitioner-minimun-R001]: Practitioner-Example-Practitioner-minimun-R001.html
+[Example-LaboMaterial-Serum]: Specimen-Example-LaboMaterial-Serum.html
+[Example-LaboMaterial-Urine]: Specimen-Example-LaboMaterial-Urine.html
 
 <!-- example -->
+[Example-JP-AllergyIntolerance-eCS-01]: AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-01.html
+[Example-JP-AllergyIntolerance-eCS-02]: AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-02.html
+[Example-JP-DrugContraindications-eCS-03]: AllergyIntolerance-Example-JP-DrugContraindications-eCS-03.html
+[Example-JP-Condition-eCS-01]: Condition-Example-JP-Condition-eCS-01.html
+[Example-JP-Condition-eCS-02]: Condition-Example-JP-Condition-eCS-02.html
+[Example-JP-Condition-eCS-03]: Condition-Example-JP-Condition-eCS-03.html
+[Example-JP-Encounter-AMB]: Encounter-Example-JP-Encounter-AMB.html
+[Example-JP-Encounter-IMP]: Encounter-Example-JP-Encounter-IMP.html
+[Example-JP-Encounter-eCS-01]: Encounter-Example-JP-Encounter-eCS-01.html
+[Example-JP-MedReq-ExtAnus-AsNeeded-Total1]: MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.html
+[Example-JP-MedReq-ExtSkin-Total2]: MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.html
+[Example-JP-MedReq-PO-4timez-7days]: MedicationRequest-Example-JP-MedReq-PO-4timez-7days.html
+[Example-JP-MedReq-PO-AsNeeded-LimitMax]: MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.html
+[Example-JP-MedReq-PO-BID-10days-AsNeeded]: MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.html
+[Example-JP-MedReq-PO-BID-2d]: MedicationRequest-Example-JP-MedReq-PO-BID-2d.html
+[Example-JP-MedReq-PO-Fumin-AsNeeded-4]: MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.html
+[Example-JP-MedReq-PO-SID-28days]: MedicationRequest-Example-JP-MedReq-PO-SID-28days.html
+[Example-JP-MedReq-PO-SID-90-AMB]: MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.html
+[Example-JP-MedReq-PO-TID-2days]: MedicationRequest-Example-JP-MedReq-PO-TID-2days.html
 [JP-MedReq-ePreData-Example-fukintouByDay]: MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html
+[Example-ObsLabo-Alb]: Observation-Example-ObsLabo-Alb.html
+[Example-ObsLabo-K]: Observation-Example-ObsLabo-K.html
+[Example-ObsLabo-eGFR]: Observation-Example-ObsLabo-eGFR.html
+[Example-Patient-minimun]: Patient-Example-Patient-minimun.html
+[Example-Practitioner-minimun-D001]: Practitioner-Example-Practitioner-minimun-D001.html
+[Example-Practitioner-minimun-D002]: Practitioner-Example-Practitioner-minimun-D002.html
+[Example-Practitioner-minimun-D003]: Practitioner-Example-Practitioner-minimun-D003.html
+[Example-Practitioner-minimun-R001]: Practitioner-Example-Practitioner-minimun-R001.html
+[Example-LaboMaterial-Serum]: Specimen-Example-LaboMaterial-Serum.html
+[Example-LaboMaterial-Urine]: Specimen-Example-LaboMaterial-Urine.html
 
 <!-- Invariant -->
