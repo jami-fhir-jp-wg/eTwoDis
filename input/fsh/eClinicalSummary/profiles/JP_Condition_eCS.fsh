@@ -7,7 +7,7 @@
 Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
-Title:  "JP_Condition_eCS"
+Title:  "eCS/CLINS:JP_Condition_eCS"
 Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
@@ -24,7 +24,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * ^fhirVersion = #4.0.1
 
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
-* . ^comment = ""
+* . ^comment = "ー"
 
 * meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
@@ -135,12 +135,12 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * category 1..1 MS
 * category ^short = "臨床的状態に割り当てられたカテゴリー。"
 * category ^definition = "臨床的状態に割り当てられたカテゴリー。設定する場合には、problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは、コード'encounter-diagnosis'とすること。コードに対応するdisplay nameは\"Encounter Diagnosis\"。"
-* category ^comment = ""
+* category ^comment = "ー"
 
 * severity 0..1
 * severity ^short = "潜在的な臨床的危険性、致命度。"
 * severity ^definition = "記述する場合は、コード表："http://jpfhir.jp/fhir/core/CodeSystem/JP_ConditionSeverity_CS"からMI：軽度、MO：中度、SE：重度、UK：不明のいずれかを設定する。"
-* severity ^comment = ""
+* severity ^comment = "ー"
 
 * code 1..1 MS
 * code ^short = "傷病名のコードと名称"
@@ -208,7 +208,7 @@ and syobo 0..
 * onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日を必須でdateTime型で記述するため、onsetDateTime要素を使用する。"
 * onsetDateTime 0..1 MS
 * onsetDateTime ^short = "病名開始日"
-* onsetDateTime ^definition = "病名開始日。電子カルテ情報共有サービスでは必須。"
+* onsetDateTime ^definition = "病名開始日。電子カルテ情報共有サービスで5情報のひとつとして送信される場合には必須。"
 
 
 * abatement[x] 0..1 MS
@@ -220,12 +220,12 @@ and syobo 0..
   * insert relative_short_definition("この情報を記録した登録日")
 
 * recorder 0.. MS
-* recorder only Reference(JP_Practitioner_eCS)
+* recorder only Reference(JP_Practitioner)
   * insert relative_short_definition("登録者の情報を記述しているJP_Practitionerリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * asserter 0..1 MS
-* asserter only Reference(JP_Patient or JP_Practitioner or JP_Patient_eCS or JP_Practitioner_eCS or RelatedPerson)
+* asserter only Reference(JP_Patient or JP_Practitioner or RelatedPerson)
   * insert relative_short_definition("この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。")
   * ^comment = "本仕様ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）"
 
@@ -272,21 +272,21 @@ Description: "病名の前置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
 * valueCodeableConcept.coding[medisExchange].system = $JP_BodySite_MEDIS_Concept_CS (exactly)
 * valueCodeableConcept.coding[medisExchange].code 1..
-* valueCodeableConcept.coding[medisExchange] ^short = "MEDIS ICD10対応標準病名マスター(修飾語交換用コード) 。【詳細参照】"
+* valueCodeableConcept.coding[medisExchange] ^short = "MEDIS ICD10対応標準病名マスター(修飾語交換用コード) 。"
 * valueCodeableConcept.coding[medisExchange] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語交換用コード "
 //* valueCodeableConcept.coding[medisExchange] ^comment = "JP_ConditionDiseaseModifierMEDISExchange_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[medisRecordNo] from $JP_ConditionDiseaseModifierMEDISRecordNo_VS (required)
 * valueCodeableConcept.coding[medisRecordNo].system = $JP_BodySite_MEDIS_ManagementID_CS (exactly)
 * valueCodeableConcept.coding[medisRecordNo].code 1..
-* valueCodeableConcept.coding[medisRecordNo] ^short = "MEDIS ICD10対応標準病名マスター(修飾語管理番号) 。【詳細参照】"
-* valueCodeableConcept.coding[medisRecordNo] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語管理番号 "
+* valueCodeableConcept.coding[medisRecordNo] ^short = "MEDIS ICD10対応標準病名マスター(修飾語管理番号) 。"
+* valueCodeableConcept.coding[medisRecordNo] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語管理番号。電子カルテ情報共有サービスでは修飾語管理番号を使用することが必須。"
 //* valueCodeableConcept.coding[medisRecordNo] ^comment = "JP_ConditionDiseaseModifierMEDISRercordNo_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[receipt] from $JP_ConditionDiseaseModifierReceipt_VS (required)
 * valueCodeableConcept.coding[receipt].system = $JP_Modifier_Disease_Claim_CS (exactly)
 * valueCodeableConcept.coding[receipt].code 1..
-* valueCodeableConcept.coding[receipt] ^short = "レセプト電算用修飾語マスター。【詳細参照】"
+* valueCodeableConcept.coding[receipt] ^short = "レセプト電算用修飾語マスター。"
 * valueCodeableConcept.coding[receipt] ^definition = "レセプト電算システムで定義されている修飾語コード。"
 //* valueCodeableConcept.coding[receipt] ^comment = "JP_ConditionDiseaseModifierReceipt_VSの中から適切なコードを指定する。"
 
@@ -318,20 +318,20 @@ Description: "病名の後置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
 * valueCodeableConcept.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)
 * valueCodeableConcept.coding[medisExchange].code 1..
-* valueCodeableConcept.coding[medisExchange] ^short = "MEDIS ICD10対応標準病名マスター(修飾語交換用コード) 。【詳細参照】"
+* valueCodeableConcept.coding[medisExchange] ^short = "MEDIS ICD10対応標準病名マスター(修飾語交換用コード) 。"
 * valueCodeableConcept.coding[medisExchange] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語交換用コード "
 //* valueCodeableConcept.coding[medisExchange] ^comment = "JP_ConditionDiseaseModifierMEDISExchange_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[medisRecordNo] from $JP_ConditionDiseaseModifierMEDISRecordNo_VS (required)
 * valueCodeableConcept.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly)
 * valueCodeableConcept.coding[medisRecordNo].code 1..
-* valueCodeableConcept.coding[medisRecordNo] ^short = "MEDIS ICD10対応標準病名マスター(修飾語管理番号) 。【詳細参照】"
-* valueCodeableConcept.coding[medisRecordNo] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語管理番号 "
+* valueCodeableConcept.coding[medisRecordNo] ^short = "MEDIS ICD10対応標準病名マスター(修飾語管理番号) 。"
+* valueCodeableConcept.coding[medisRecordNo] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語管理番号。電子カルテ情報共有サービスでは修飾語管理番号を使用することが必須。"
 //* valueCodeableConcept.coding[medisRecordNo] ^comment = "JP_ConditionDiseaseModifierMEDISRercordNo_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[receipt] from $JP_ConditionDiseaseModifierReceipt_VS (required)
 * valueCodeableConcept.coding[receipt].system = $JP_Modifier_Disease_Claim_CS (exactly)
 * valueCodeableConcept.coding[receipt].code 1..
-* valueCodeableConcept.coding[receipt] ^short = "レセプト電算用修飾語マスター。【詳細参照】"
+* valueCodeableConcept.coding[receipt] ^short = "レセプト電算用修飾語マスター。"
 * valueCodeableConcept.coding[receipt] ^definition = "レセプト電算システムで定義されている修飾語コード。"
 //* valueCodeableConcept.coding[receipt] ^comment = "JP_ConditionDiseaseModifierReceipt_VSの中から適切なコードを指定する。"

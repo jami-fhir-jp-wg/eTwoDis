@@ -7,7 +7,7 @@
 Profile: JP_MedicationDosage_eCS
 Parent: JP_MedicationDosage
 Id: jp-medicationdosage-eCS
-Title: "JP_MedicationRequest_eCS Dosageデータタイプ"
+Title: "eCS/CLINS:JP_MedicationRequest_eCS Dosageデータタイプ"
 Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_eCS のdosageInstruction要素で使用するDosageデータタイプ"
 
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS"
@@ -73,7 +73,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code.coding 0..1 MS
 * timing.code.coding ^definition = "JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
+* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 
 * timing.code.coding.code ^short = "用法コード"
 * timing.code.coding.code 1..1 MS
@@ -98,8 +98,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * doseAndRate.type 1..1 MS
 * doseAndRate.type ^definition = "力価区分。力価区分コード。\r\n本要素は、安全性のため省略せずに必須とする。\r\n用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。"
-* doseAndRate.type ^comment = ""
-* doseAndRate.type ^requirements = ""
+* doseAndRate.type ^comment = "ー"
+* doseAndRate.type ^requirements = "ー"
 
 * doseAndRate.type.coding 1..*
 * doseAndRate.type.coding.system 1..1 MS
@@ -111,7 +111,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。内服、外用ともに１回投与量を指定する場合にはこの要素を使用する。"
 * doseAndRate.dose[x] 0..1 MS
-* doseAndRate.doseQuantity ^comment = ""
+* doseAndRate.doseQuantity ^comment = "ー"
 * doseAndRate.doseQuantity.value 1..1 MS
 * doseAndRate.doseQuantity.unit 1..1 MS
 * doseAndRate.doseQuantity.system 1..1 MS

@@ -7,7 +7,7 @@
 Profile: JP_Encounter_eCS
 Parent: JP_Encounter
 Id: JP-Encounter-eCS
-Title: "JP_Encounter-eCS"
+Title: "eCS/CLINS:JP_Encounter-eCS"
 Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
@@ -21,7 +21,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * ^fhirVersion = #4.0.1
 
 
-* . ^short = ""
+* . ^short = "ー"
 * . ^definition = "診療情報提供では、紹介理由を記述する受診時情報. 診療サマリーではサマリー対象となる受診や入院に関する受診時または入院時情報。診療６情報において埋め込みリソースとして記述する場合にも適用できる。"
 
 * meta 1..1 MS
@@ -104,7 +104,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * diagnosis.condition 1..1 MS   
 * diagnosis.condition ^short = "患者状態（病態・疾患名・症状）への参照"
 * diagnosis.condition ^definition = "患者状態（病態・疾患名・症状）への参照"
-* diagnosis.condition only Reference(JP_Condition_eCS)
+* diagnosis.condition only Reference(JP_Condition)
 * diagnosis.use 0..1 MS
 * diagnosis.use ^short = "診断の位置付け区分"
 * diagnosis.use ^definition = "診断の位置付け区分（DiagnosisRole）。これにより、入院時診断、退院時診断、などが区別される。入院中のすべての診断病名にこのコードが必須ではないが、少なくともAD:入院時診断、DD:退院時診断、CC:主訴、についてはそれぞれ1個以上はこのコードがついている必要がある。AD:入院時診断　DD:退院時診断　FU:フォローアップ時診断 "

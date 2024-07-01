@@ -7,7 +7,7 @@
 Profile: JP_MedicationRequest_eCS
 Parent: JP_MedicationRequest
 Id: JP-MedicationRequest-eCS
-Title:  "JP_MedicationRequest_eCS"
+Title:  "eCS/CLINS:JP_MedicationRequest_eCS"
 Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
@@ -72,7 +72,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 
 * contained[requester] only  JP_Practitioner
   * insert relative_short_definition("処方情報を作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
@@ -104,7 +104,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 
 * status = #completed
 * intent = #order
-
+* category MS 
 // * category 薬剤使用区分（外来、院内、院外などの区分）上位Profileで定義済み
 * obeys needs-anyOfStandardCode-medication
 
@@ -116,8 +116,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * medication[x].coding ^slicing.discriminator.path = "system"
 * medication[x].coding ^slicing.rules = #open
 * medication[x].coding contains
-    codingHOT7 0..1 MS and
-    codingHOT9 0..1 MS and
+//    codingHOT7 0..1 MS and
+//    codingHOT9 0..1 MS and
     codingYJ 0..1 MS and
 //    codingGS1 0..1 MS and
     codingGeneralName 0..1 MS and
@@ -131,7 +131,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
   * insert relative_short_definition("標準コードが存在しない医薬品を意味するコード　NOCODED")
 * medication[x].coding[nocoded].display 1.. MS
   * insert relative_short_definition("標準コードなし")
-
+/*
 * medication[x].coding[codingHOT9].system 1.. MS
 * medication[x].coding[codingHOT9].system = $JP_MedicationCodeHOT9_CS (exactly)
   * insert relative_short_definition("HOT9コードの識別ID")
@@ -149,7 +149,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
   * insert relative_short_definition("HOT7医薬品コード\(HOT9の末尾２桁である販社コードが不明の場合に限る\)")
 * medication[x].coding[codingHOT7].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
-
+*/
 /*
 * medication[x].coding[codingGS1].system = "urn:oid:2.51.1.1" (exactly)
   * insert relative_short_definition("GS1標準の識別コードを示すsystem値")
