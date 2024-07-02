@@ -72,7 +72,7 @@
 </grouping>
 <grouping xmlns="http://hl7.org/fhir" id="-term-codesystem">
   <name value="Terminology: Code Systems"/>
-          <description value="本実装ガイドで追加定義されたコード表のCodeSystem の一覧. 　JP-Coreで使用されるコード表は &quot;https://jpfhir.jp/fhir/core/terminology/ig/&quot; も参照のこと。"/>
+          <description value="本実装ガイドで追加定義されたコード表のCodeSystem の一覧. 　JP-Coreで使用されるコード表は &lt;a href=&quot;https://jpfhir.jp/fhir/core/terminology/ig/&quot;&gt;&quot;https://jpfhir.jp/fhir/core/terminology/ig/&quot;&lt;/a&gt; も参照のこと。"/>
 </grouping>
 <grouping xmlns="http://hl7.org/fhir" id="-term-valueset">
   <name value="Terminology: Value Sets"/>
