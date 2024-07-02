@@ -24,28 +24,7 @@
   {% include fragment-css.html %}
 
   <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-  <script>
-    var delemMrc = document.getElementById('MedicationRequestDetails');
-    var delemDoi = document.getElementById('DosageInstructionDetails');
 
-    delemMrc.addEventListener('toggle', function () => {
-      const isOpen = delemMrc.open;
-      if(isOpen) {
-        document.getElementById('mrc').style.display = 'none';
-      }else{
-        document.getElementById('mrc').style.display = 'inline';
-      }
-    });
-
-    delemDoi.addEventListener('toggle', function () => {
-      const isOpen = delemDoi.open;
-      if(isOpen) {
-        document.getElementById('dic').style.display = 'none';
-      }else{
-        document.getElementById('dic').style.display = 'inline';
-      }
-    });
-  </script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
