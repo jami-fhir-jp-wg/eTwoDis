@@ -150,7 +150,7 @@ table th {
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS Conditionリソース（傷病名情報）</p>
@@ -158,7 +158,7 @@ table th {
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-MedicationRequest-eCS.html" title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html" title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
@@ -166,7 +166,7 @@ table th {
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Observation-LabResult-eCS.html" title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html" title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
@@ -174,7 +174,7 @@ table th {
          </tr>
 <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS Patientリソース（患者情報）</p>
@@ -192,7 +192,7 @@ table th {
 <table>
 <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）</p>
@@ -200,7 +200,7 @@ table th {
          </tr>
 <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
@@ -208,7 +208,7 @@ table th {
          </tr>
                   <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
             </td>
             <td>
 <p>オーダー情報　JP-ServiceRequest</p>
@@ -216,7 +216,7 @@ table th {
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
             </td>
             <td>
 <p>検査検体情報　JP-Specimen</p>

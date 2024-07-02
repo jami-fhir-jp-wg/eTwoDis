@@ -27,7 +27,7 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * ^content = #complete
 * ^caseSensitive = false
 * #JPGCHKUP01 "健診結果報告書"
-* #JPMCHKUP01 "自治体検診結果報告書"
+//* #JPMCHKUP01 "自治体検診結果報告書"
 * #18842-5 "退院時サマリー"
 * #57133-1 "診療情報提供書"
 * #57833-6 "処方箋"

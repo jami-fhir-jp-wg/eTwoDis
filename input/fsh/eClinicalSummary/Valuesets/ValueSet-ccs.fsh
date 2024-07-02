@@ -1,6 +1,16 @@
+ValueSet: JP_ehrshrs_indication_VS
+Id: jp-ehrshrs-indication-vs
+Title: "長期保存／未告知診療情報のためのフラグコード　valueSet"
+Description: "長期保存／未告知診療情報のためのフラグコード　valueSet"
+* ^url = $JP_ehrshrs_indication_VS
+* ^title = "長期保存／未告知診療情報のためのフラグコード　valueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system JP_ehrshrs_indication_CS
 
 ValueSet:  JP_CLINS_BundleResourceType_VS
 Id:   jp-clins-bundleresourcetype-vs
+Title: "６情報Bundle６情報リソースタイプ　valueSet"
 Description: "６情報Bundle６情報リソースタイプ　valueSet"
 * ^url = $JP_CLINS_BundleResourceType_VS
 * ^title = "６情報Bundle６情報リソースタイプ　valueSet"
@@ -10,12 +20,14 @@ Description: "６情報Bundle６情報リソースタイプ　valueSet"
 
 ValueSet: JP_eCS_MedicationCode_Nocoded_VS
 Id: jp-ecs-medicationcode-nocoded-vs
+Title: "医薬品コードで標準コードが割り当てられない場合に使用する未コード化コード  ValueSet"
 Description: "医薬品コードで標準コードが割り当てられない場合に使用する未コード化コードだけのValueSet"
 * ^url = $JP_eCS_MedicationCodeNocoded_VS
 * ^title = "医薬品未標準化コード項目　valueSet"
 * ^status = #active
 * ^experimental = false
 * include codes from system $JP_eCS_MedicationCodeNocoded_CS
+
 
 ValueSet: JP_admit_Source_VS
 Id: jp-admit-Source-Source-vs

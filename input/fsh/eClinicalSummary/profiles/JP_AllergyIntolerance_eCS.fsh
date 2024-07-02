@@ -40,8 +40,8 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
+* meta.tag from $JP_ehrshrs_indication_VS 
 
-* meta.tag[lts] from $JP_ehrshrs_indication_VS 
 * meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS 
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
   * system 1..1 MS
